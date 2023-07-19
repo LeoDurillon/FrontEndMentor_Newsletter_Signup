@@ -29,7 +29,7 @@ handleSubmit=(e)=>{
 }
 
 
-handleResize=()=>{
+/*handleResize=()=>{
   const width=window.innerWidth;
   if(initialWidth<1200 && width >= 1200){
     illutrationMobile.classList.add('--is-off');
@@ -41,7 +41,7 @@ handleResize=()=>{
     illustrationDesktop.classList.add('--is-off');
     initialWidth=width;
   }
-}
+}*/
 
 const app=()=>{
   if(initialWidth>=1200){
@@ -49,7 +49,7 @@ const app=()=>{
   }else{
     illustrationDesktop.classList.add('--is-off')
   }
-  window.addEventListener("resize",handleResize);
+  //window.addEventListener("resize",handleResize);
 
   form.addEventListener('submit',handleSubmit);
   exit.addEventListener('click',handleClick);

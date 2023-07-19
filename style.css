@@ -30,8 +30,14 @@ body{
   width:100%;
   max-width: 900px;
 }
-.Container-Illustration svg{
+.Container-Illustration#mobile{
+  display: block;
+}
+.Container-Illustration#mobile svg{
   width:100vw;
+}
+.Container-Illustration#desktop{
+  display: none;
 }
 .Container-Text{
   display: flex;
@@ -229,6 +235,12 @@ h3{
   .Container-Text{
     margin:auto 0;
     padding: 0 4rem;
+  }
+  .Container-Illustration#desktop{
+    display: block;
+  }
+  .Container-Illustration#mobile{
+    display: none;
   }
 
   .attribution {
