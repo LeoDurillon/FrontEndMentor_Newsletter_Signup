@@ -11,22 +11,16 @@ body{
   font-size: var(--font-par);
   width: 100vw;
 
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
   min-height: 100vh;
   color:hsl(235, 18%, 26%);
 }
 
 .Container{
   background-color: white;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  height:110vh;
+  min-height:100vh;
+  height:fit-content;
   width:100%;
   max-width: 900px;
 }
@@ -211,8 +205,13 @@ h3{
 }
 
 
-@media (min-width:1200px) {
-
+@media (min-width:1024px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
   .Container{
     flex-direction: row;
     justify-content: space-between;    
@@ -221,7 +220,7 @@ h3{
     padding:1.5rem;
     
     border-radius: 3rem;
-    
+    min-height: auto;
     height:auto;
     max-width: 900px;
   }
