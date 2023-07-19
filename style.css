@@ -212,13 +212,7 @@ h3{
 
 
 @media (min-width:1200px) {
-  :root{
-    --font-title:5rem;
-  }
 
-  h3{
-    line-height: 4.5rem;
-  }
   .Container{
     flex-direction: row;
     justify-content: space-between;    
@@ -242,7 +236,13 @@ h3{
   .Container-Illustration#mobile{
     display: none;
   }
+  :root{
+    --font-title:5rem;
+  }
 
+  h3{
+    line-height: 4.5rem;
+  }
   .attribution {
     color:white;
     position: absolute;
